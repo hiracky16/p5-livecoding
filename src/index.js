@@ -9,19 +9,15 @@ window.onload = function () {
 		  const canvas = p5.createCanvas(800, 800)
       const context = canvas.elt.getContext('2d');
       canvas.parent('canvas');
+			p5.randomSeed(0);
 		}
   
     p5.draw = () => {
-      p5.background(255);
-			p5.ellipse(400, 400, 80, 80);
-			p5.ellipse(500, 400, 80, 80);
-			p5.ellipse(600, 400, 80, 80);
-			p5.ellipse(400, 500, 80, 80);
-			p5.ellipse(500, 500, 80, 80);
-			p5.ellipse(600, 500, 80, 80);
-			p5.ellipse(600, 600, 80, 80);
-			p5.ellipse(400, 600, 80, 80);
-			p5.ellipse(500, 600, 80, 80);
+			var r = p5.random(0, 255);	
+			var g = p5.random(0, 255);	
+			var b = p5.random(0, 255);	
+			p5.fill(r, g, b)
+      p5.ellipse(p5.mouseX, p5.mouseY, 80, 80);
     }
   }
   
