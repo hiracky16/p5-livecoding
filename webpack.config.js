@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/sine.js',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
